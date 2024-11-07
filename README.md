@@ -25,6 +25,10 @@
 - [Docker](./Теория/System%20design/Docker.md)
 - [Микросервисы](./Теория/System%20design/Микросервисы.md)
 
+#### Рельная работа
+
+- [Тестирование](./Практика/Тестирование.md)
+
 ### Практика
 
 - [Пет-проект для подготовки к реальной работе](https://github.com/coderroleggg/java-base/blob/main/%D0%9F%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Todolist.md)
