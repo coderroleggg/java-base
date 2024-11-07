@@ -36,6 +36,7 @@ notifications (
     user_id BIGINT NOT NULL,
     task_id BIGINT NOT NULL,
     message TEXT NOT NULL,
+    task_list_name TEXT NOT NULL,
     status VARCHAR(20) NOT NULL DEFAULT 'PENDING',
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     sent_at TIMESTAMP
@@ -52,6 +53,7 @@ notifications (
 {
   "eventType": "TASK_OVERDUE",
   "taskId": 1,
+  "taskListId": 1,
   "userId": 1,
   "title": "Купить молоко",
   "dueDate": "2024-09-19T18:00:00"
@@ -75,7 +77,7 @@ notifications (
 - Для каждого события TASK_OVERDUE:
   ```
   message = "Task '{title}' is overdue. Due date was: {dueDate}"
-  taskListName = получить значение с помощью GET-запроса /api/tasklists/{task_list_id} к сервису Task Management
+  task_list_name = получить значение с помощью GET-запроса /api/tasklists/{task_list_id} к сервису Task Management
   ```
 
 ## REST API
